@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>企业黑名单</title>
+  <meta name="renderer" content="webkit" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+  <meta name="Language" content="zh-CN" />
+  <meta name="Copyright" content="fish" />
+  <meta name="Designer" content="fish" />
+  <meta name="Publisher" content="fish" />
+  <meta name="Distribution" content="Global" />
+  <meta name="author"  content="fish" />
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow,archive" />
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <span class="active" id="nav-search">查询黑心企业</span>
+    <span id="nav-input">录入黑心企业</span>
+  </header>
+  <div class="body">
+    <div class="add" id="add">
+      <div class="center">
+          <select id="inp-district">
+          </select>
+          <input type="text" class="input" id="inp-name" placeholder="公司名称" />
+          <textarea placeholder="该公司的污点" id="inp-content" cols="30" rows="10"></textarea>
+          <div class="submit" id="add-submit">提交</div>
+      </div>
+    </div>
+    <div id="search" class="search">
+      <div class="add-box">
+        <div class="input-box">
+            <select id="sel-district">
+            </select>
+            <div class="submit" id="search-input">查询</div>
+        </div>
+        <div class="search-result" id="search-result">
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <p></p>
+      <p>企业黑名单，基于<span class="blod">星云区块链技术.永久收录企业在用人方面的污点，给广大求职者一个参考</span>。</p>
+    </div>
+  </div>
+  <div class="footer">
+    <a target="_Blank" href="https://github.com/ChengOrangeJu/WebExtensionWallet">星云钱包安装</a>
+    <a target="_Blank" href="https://blog.nebulas.io/2018/04/12/creating-a-nas-wallet/">星云钱包开户</a>
+  </div>
+  <div class="toast" id="toast"></div>
+  <div class="loading" id="loading">
+    <img src="./img/loading.png" alt="">
+  </div>
+
+  <script src=./lib/jquery.js></script>
+  <script src=./lib/nebPay.js></script>
+  <script src=./lib/nebulas.js></script>
+  <script src=./index.js></script>
+</body>
+</html>
